@@ -19,7 +19,7 @@ int[,] FillArray (int rows, int columns, int minValue, int maxValue)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = rnd.Next(minValue, maxValue);
+            array[i, j] = rnd.Next(minValue, maxValue +1);
         }
     }
     return array;
